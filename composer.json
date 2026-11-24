@@ -1,0 +1,76 @@
+{
+   "name": "warrenboswell/laravel-ai-guardrails",
+   "description": "Deterministic PHP guardrails for Laravel AI & LLM workflows: redact outbound PII/secrets, sanitize prompt boundaries, audit invoice arithmetic, strip hallucinated database IDs, enforce catalog bounds, and lock rate-card quotes.",
+   "type": "library",
+   "keywords": [
+      "laravel",
+      "ai",
+      "llm",
+      "guardrails",
+      "ai-guardrails",
+      "llm-guard",
+      "laravel-ai",
+      "prism",
+      "hallucination",
+      "prompt-injection",
+      "pii-redaction",
+      "deterministic-validation",
+      "structured-output"
+   ],
+   "homepage": "https://boswell.dev/ai-demo",
+   "license": "MIT",
+   "authors": [
+      {
+         "name": "Warren Boswell",
+         "email": "warren@boswell.dev",
+         "homepage": "https://boswell.dev",
+         "role": "Principal Laravel & AI Architect"
+      }
+   ],
+   "support": {
+      "issues": "https://github.com/warrenboswell/laravel-ai-guardrails/issues",
+      "source": "https://github.com/warrenboswell/laravel-ai-guardrails",
+      "docs": "https://boswell.dev/projects/enterprise-generative-ai-laravel-workflows"
+   },
+   "require": {
+      "php": "^8.2|^8.3|^8.4",
+      "illuminate/support": "^11.0|^12.0|^13.0"
+   },
+   "require-dev": {
+      "laravel/pint": "^1.27",
+      "orchestra/testbench": "^9.0|^10.0|^11.0",
+      "pestphp/pest": "^3.0|^4.0|^5.0"
+   },
+   "autoload": {
+      "psr-4": {
+         "WarrenBoswell\\LaravelAiGuardrails\\": "src/"
+      }
+   },
+   "autoload-dev": {
+      "psr-4": {
+         "WarrenBoswell\\LaravelAiGuardrails\\Tests\\": "tests/"
+      }
+   },
+   "scripts": {
+      "test": "vendor/bin/pest",
+      "lint": "vendor/bin/pint"
+   },
+   "extra": {
+      "laravel": {
+         "providers": [
+            "WarrenBoswell\\LaravelAiGuardrails\\AiGuardrailsServiceProvider"
+         ],
+         "aliases": {
+            "AiGuardrails": "WarrenBoswell\\LaravelAiGuardrails\\Facades\\AiGuardrails"
+         }
+      }
+   },
+   "config": {
+      "sort-packages": true,
+      "allow-plugins": {
+         "pestphp/pest-plugin": true
+      }
+   },
+   "minimum-stability": "stable",
+   "prefer-stable": true
+}
