@@ -49,7 +49,7 @@ describe('PiiRedactionGuard', function (): void {
         $guard = new PiiRedactionGuard;
 
         $input = 'Contact elena@saasify.io (or backup elena@saasify.io) at +1 (415) 555-2671 from 192.168.1.42. '
-           .'Card 4532-0151-1283-0366, key sk-proj-1234567890abcdefghijklmnop, order 1234567890123456.';
+            .'Card 4532-0151-1283-0366, key sk-proj-1234567890abcdefghijklmnop, order 1234567890123456.';
 
         $result = $guard->redact($input);
 
@@ -109,14 +109,14 @@ describe('ArithmeticGuard', function (): void {
             ->and($result->lineItemsSum)->toBe(1258.8)
             ->and($result->computedTotal)->toBe(1440.0)
             ->and($result->jsonSerialize())->toHaveKeys([
-               'status',
-               'headline',
-               'detail',
-               'computed_total',
-               'extracted_total',
-               'line_items_sum',
-               'discrepancy',
-           ]);
+                'status',
+                'headline',
+                'detail',
+                'computed_total',
+                'extracted_total',
+                'line_items_sum',
+                'discrepancy',
+            ]);
     });
 
     it('catches per-line multiplication drift and builds a self-correction retry prompt', function (): void {
