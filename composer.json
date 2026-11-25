@@ -30,7 +30,7 @@
    "support": {
       "issues": "https://github.com/warrenboswell/laravel-ai-guardrails/issues",
       "source": "https://github.com/warrenboswell/laravel-ai-guardrails",
-      "docs": "https://boswell.dev/projects/enterprise-generative-ai-laravel-workflows"
+      "docs": "https://boswell.dev/articles/5-practical-saas-ai-workflows"
    },
    "require": {
       "php": "^8.2|^8.3|^8.4",

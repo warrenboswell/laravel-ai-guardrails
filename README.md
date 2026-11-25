@@ -14,7 +14,7 @@ LLMs (OpenAI, Gemini, Claude) are great at turning messy text into structured JS
 
 > **See the guardrails running live in the browser (no signup required):**
 > - **[Interactive Laravel 13 + Livewire 4 AI Sandbox (`boswell.dev/ai-demo`)](https://boswell.dev/ai-demo)**
-> - **[Enterprise Generative AI Architecture Case Study](https://boswell.dev/projects/enterprise-generative-ai-laravel-workflows)**
+> - **[Article: 5 Practical SaaS AI Workflows](https://boswell.dev/articles/5-practical-saas-ai-workflows)**
 
 ---
 
